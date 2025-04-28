@@ -7,9 +7,9 @@ let bot
 createBot()
 function createBot() {
   bot = mineflayer.createBot({
-    host: "192.168.0.97",
+    host: "192.168.0.01", //pode ser o dominio ou ip numerico, e ate mesmo localhost
     port: 25565,
-    username: "tuntuntunSAHUR",
+    username: "bot_sword", //nome do bot
     auth: "offline"
   })
 
@@ -19,7 +19,7 @@ function createBot() {
   let timer = 0
 
   bot.on("spawn", () => {
-    if (!loginDone) {
+    if (!loginDone) { //esta funcção foi feita para entrar com auth: "offiline" caso mude para online. nao é nessesario alteração
       bot.chat("/login password")
       console.log("/login password")
       loginDone = true
