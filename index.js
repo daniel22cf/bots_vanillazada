@@ -27,26 +27,10 @@ function delay(ms) {
 }
 
 // Função assíncrona para iniciar os bots com delay
-//async function startBots() {
- // console.log("Inciando bot_admin...");
-  //require('./0bot_admin'); // Inicia o vanillazada
-  //await delay(10000); // Espera 10 segundos (10.000 ms)
-
-  //console.log("Iniciando bot_sword...");
-  //require('./1bot_sword'); // Inicia o sword
-  //await delay(10000); // Espera 10 segundos
-    
-  //console.log("Iniciando bot_smp...");
-  //require('./2bot_smp'); // Inicia o smp
-  //await delay(10000); // Espera 10 segundos
-  
- //console.log("Iniciando bot_netherit_pot...");
- //require('./3bot_netherit_pot'); // Inicia o bot2
- //await delay(10000); // Espera 10 segundos
-
-  //console.log("Iniciando bot_diamond_pot...");
-  //require('./4bot_diamond_pot'); // Inicia o bot3 */
-//}
+async function startBots() {
+  console.log("Inciando bot...");
+  require('./bot'); // Inicia o vanillazada
+  await delay(10000); // Espera 10 segundos (10.000 ms)
 
 // Chama a função para iniciar os bots
-//startBots();
+startBots();
