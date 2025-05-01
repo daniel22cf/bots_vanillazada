@@ -2,7 +2,7 @@ const { execSync } = require('child_process');
 
 // Função para instalar pacotes caso não estejam instalados
 function instalarDependencias() {
-  const pacotes = ['mineflayer', 'mineflayer-pathfinder', 'mineflayer-armor-manager', 'mineflayer-pvp', 'vec3', 'axios', 'node_characterai', 'minecraft-data'];
+  const pacotes = ['mineflayer', 'mineflayer-pathfinder', 'mineflayer-armor-manager', 'mineflayer-pvp', 'vec3', 'axios', 'node_characterai', 'minecraft-data']; // não são nescesarias todas as dependencias, porém coloquei todas porque outros projetos que eu uso usam essas. e em breve eles estarão aqui
   pacotes.forEach(pacote => {
     try {
       require.resolve(pacote);
